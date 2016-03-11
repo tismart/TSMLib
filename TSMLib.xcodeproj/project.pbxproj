@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CE6198FD8E400F47907735C /* Pods_TSMLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E76BD25EEE464907B849B8 /* Pods_TSMLib.framework */; };
 		7B4DD2661C93801D0006B439 /* TSMLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B4DD2651C93801D0006B439 /* TSMLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B4DD26D1C93801D0006B439 /* TSMLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4DD2621C93801D0006B439 /* TSMLib.framework */; };
 		7B4DD2721C93801D0006B439 /* TSMLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DD2711C93801D0006B439 /* TSMLibTests.swift */; };
+		7B4DD27D1C9380850006B439 /* TSMLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DD27C1C9380850006B439 /* TSMLibrary.swift */; };
+		7B4DD2801C9380920006B439 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DD27F1C9380920006B439 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F24BF42E321153862B02C47 /* Pods-TSMLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSMLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-TSMLib/Pods-TSMLib.release.xcconfig"; sourceTree = "<group>"; };
+		39E76BD25EEE464907B849B8 /* Pods_TSMLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSMLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B4DD2621C93801D0006B439 /* TSMLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TSMLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B4DD2651C93801D0006B439 /* TSMLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSMLib.h; sourceTree = "<group>"; };
 		7B4DD2671C93801D0006B439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B4DD26C1C93801D0006B439 /* TSMLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSMLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B4DD2711C93801D0006B439 /* TSMLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSMLibTests.swift; sourceTree = "<group>"; };
 		7B4DD2731C93801D0006B439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B4DD27C1C9380850006B439 /* TSMLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSMLibrary.swift; sourceTree = "<group>"; };
+		7B4DD27F1C9380920006B439 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = Managers/NetworkManager.swift; sourceTree = "<group>"; };
+		BBB01180E1EBC495DEE21C36 /* Pods-TSMLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSMLib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TSMLib/Pods-TSMLib.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CE6198FD8E400F47907735C /* Pods_TSMLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +59,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7365EC0E08FEBFCAE9328E29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39E76BD25EEE464907B849B8 /* Pods_TSMLib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7B4DD2581C93801C0006B439 = {
 			isa = PBXGroup;
 			children = (
 				7B4DD2641C93801D0006B439 /* TSMLib */,
 				7B4DD2701C93801D0006B439 /* TSMLibTests */,
 				7B4DD2631C93801D0006B439 /* Products */,
+				EFC48430CBA6FF385B307884 /* Pods */,
+				7365EC0E08FEBFCAE9328E29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +90,8 @@
 		7B4DD2641C93801D0006B439 /* TSMLib */ = {
 			isa = PBXGroup;
 			children = (
+				7B4DD27E1C9380890006B439 /* Managers */,
+				7B4DD27C1C9380850006B439 /* TSMLibrary.swift */,
 				7B4DD2651C93801D0006B439 /* TSMLib.h */,
 				7B4DD2671C93801D0006B439 /* Info.plist */,
 			);
@@ -84,6 +105,23 @@
 				7B4DD2731C93801D0006B439 /* Info.plist */,
 			);
 			path = TSMLibTests;
+			sourceTree = "<group>";
+		};
+		7B4DD27E1C9380890006B439 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7B4DD27F1C9380920006B439 /* NetworkManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		EFC48430CBA6FF385B307884 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBB01180E1EBC495DEE21C36 /* Pods-TSMLib.debug.xcconfig */,
+				2F24BF42E321153862B02C47 /* Pods-TSMLib.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B4DD2761C93801D0006B439 /* Build configuration list for PBXNativeTarget "TSMLib" */;
 			buildPhases = (
+				FC8E91A4264567086FF15BDB /* Check Pods Manifest.lock */,
 				7B4DD25D1C93801D0006B439 /* Sources */,
 				7B4DD25E1C93801D0006B439 /* Frameworks */,
 				7B4DD25F1C93801D0006B439 /* Headers */,
 				7B4DD2601C93801D0006B439 /* Resources */,
+				D132632271A6F8889FDE355B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,11 +229,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D132632271A6F8889FDE355B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TSMLib/Pods-TSMLib-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC8E91A4264567086FF15BDB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7B4DD25D1C93801D0006B439 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B4DD2801C9380920006B439 /* NetworkManager.swift in Sources */,
+				7B4DD27D1C9380850006B439 /* TSMLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +382,9 @@
 		};
 		7B4DD2771C93801D0006B439 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBB01180E1EBC495DEE21C36 /* Pods-TSMLib.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -318,12 +395,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tismart.TSMLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		7B4DD2781C93801D0006B439 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F24BF42E321153862B02C47 /* Pods-TSMLib.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -376,6 +456,7 @@
 				7B4DD2781C93801D0006B439 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B4DD2791C93801D0006B439 /* Build configuration list for PBXNativeTarget "TSMLibTests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +465,7 @@
 				7B4DD27B1C93801D0006B439 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
