@@ -12,11 +12,4 @@ import Foundation
 public class TSMLibrary {
     public var networkManager = NetworkManager()
     
-    public init () {
-        print("Class has been initialised")
-    }
-    
-    public class func doSomething() {
-        print("Yeah, it works")
-    }
 }

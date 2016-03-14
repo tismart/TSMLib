@@ -13,6 +13,15 @@
 		7B4DD2721C93801D0006B439 /* TSMLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DD2711C93801D0006B439 /* TSMLibTests.swift */; };
 		7B4DD27D1C9380850006B439 /* TSMLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DD27C1C9380850006B439 /* TSMLibrary.swift */; };
 		7B4DD2801C9380920006B439 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DD27F1C9380920006B439 /* NetworkManager.swift */; };
+		7B98E0121C97075300458BBC /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98E0111C97075300458BBC /* Macros.swift */; };
+		7B98E0151C97084600458BBC /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98E0141C97084600458BBC /* UIColorExtension.swift */; };
+		7B98E0191C9709DB00458BBC /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98E0181C9709DB00458BBC /* NSDateExtension.swift */; };
+		7B98E01B1C970B8500458BBC /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98E01A1C970B8500458BBC /* UIImageViewExtension.swift */; };
+		7B98E01D1C970BCB00458BBC /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98E01C1C970BCB00458BBC /* UIViewExtension.swift */; };
+		7B98E01F1C970C8100458BBC /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98E01E1C970C8100458BBC /* StringExtension.swift */; };
+		7B98E0211C9764D300458BBC /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98E0201C9764D300458BBC /* UIScrollViewExtension.swift */; };
+		7B98E0231C97652600458BBC /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98E0221C97652600458BBC /* DatabaseManager.swift */; };
+		7B98E0251C97686C00458BBC /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98E0241C97686C00458BBC /* NSObjectExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,15 @@
 		7B4DD2731C93801D0006B439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B4DD27C1C9380850006B439 /* TSMLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSMLibrary.swift; sourceTree = "<group>"; };
 		7B4DD27F1C9380920006B439 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = Managers/NetworkManager.swift; sourceTree = "<group>"; };
+		7B98E0111C97075300458BBC /* Macros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Macros.swift; path = Utils/Macros.swift; sourceTree = "<group>"; };
+		7B98E0141C97084600458BBC /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Utils/Extensions/UIColorExtension.swift; sourceTree = "<group>"; };
+		7B98E0181C9709DB00458BBC /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSDateExtension.swift; path = Utils/Extensions/NSDateExtension.swift; sourceTree = "<group>"; };
+		7B98E01A1C970B8500458BBC /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageViewExtension.swift; path = Utils/Extensions/UIImageViewExtension.swift; sourceTree = "<group>"; };
+		7B98E01C1C970BCB00458BBC /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = Utils/Extensions/UIViewExtension.swift; sourceTree = "<group>"; };
+		7B98E01E1C970C8100458BBC /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = Utils/Extensions/StringExtension.swift; sourceTree = "<group>"; };
+		7B98E0201C9764D300458BBC /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIScrollViewExtension.swift; path = Utils/Extensions/UIScrollViewExtension.swift; sourceTree = "<group>"; };
+		7B98E0221C97652600458BBC /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatabaseManager.swift; path = Managers/DatabaseManager.swift; sourceTree = "<group>"; };
+		7B98E0241C97686C00458BBC /* NSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSObjectExtension.swift; path = Utils/Extensions/NSObjectExtension.swift; sourceTree = "<group>"; };
 		BBB01180E1EBC495DEE21C36 /* Pods-TSMLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSMLib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TSMLib/Pods-TSMLib.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +108,7 @@
 		7B4DD2641C93801D0006B439 /* TSMLib */ = {
 			isa = PBXGroup;
 			children = (
+				7B98E0101C97073C00458BBC /* Utils */,
 				7B4DD27E1C9380890006B439 /* Managers */,
 				7B4DD27C1C9380850006B439 /* TSMLibrary.swift */,
 				7B4DD2651C93801D0006B439 /* TSMLib.h */,
@@ -111,8 +130,32 @@
 			isa = PBXGroup;
 			children = (
 				7B4DD27F1C9380920006B439 /* NetworkManager.swift */,
+				7B98E0221C97652600458BBC /* DatabaseManager.swift */,
 			);
 			name = Managers;
+			sourceTree = "<group>";
+		};
+		7B98E0101C97073C00458BBC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7B98E0131C97082600458BBC /* Extensions */,
+				7B98E0111C97075300458BBC /* Macros.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		7B98E0131C97082600458BBC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7B98E0141C97084600458BBC /* UIColorExtension.swift */,
+				7B98E0181C9709DB00458BBC /* NSDateExtension.swift */,
+				7B98E01A1C970B8500458BBC /* UIImageViewExtension.swift */,
+				7B98E01C1C970BCB00458BBC /* UIViewExtension.swift */,
+				7B98E01E1C970C8100458BBC /* StringExtension.swift */,
+				7B98E0201C9764D300458BBC /* UIScrollViewExtension.swift */,
+				7B98E0241C97686C00458BBC /* NSObjectExtension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		EFC48430CBA6FF385B307884 /* Pods */ = {
@@ -267,8 +310,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B98E0121C97075300458BBC /* Macros.swift in Sources */,
+				7B98E0191C9709DB00458BBC /* NSDateExtension.swift in Sources */,
+				7B98E0231C97652600458BBC /* DatabaseManager.swift in Sources */,
+				7B98E0251C97686C00458BBC /* NSObjectExtension.swift in Sources */,
+				7B98E0211C9764D300458BBC /* UIScrollViewExtension.swift in Sources */,
+				7B98E01B1C970B8500458BBC /* UIImageViewExtension.swift in Sources */,
 				7B4DD2801C9380920006B439 /* NetworkManager.swift in Sources */,
+				7B98E01D1C970BCB00458BBC /* UIViewExtension.swift in Sources */,
 				7B4DD27D1C9380850006B439 /* TSMLibrary.swift in Sources */,
+				7B98E0151C97084600458BBC /* UIColorExtension.swift in Sources */,
+				7B98E01F1C970C8100458BBC /* StringExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
