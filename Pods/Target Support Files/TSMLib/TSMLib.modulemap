@@ -1,0 +1,6 @@
+framework module TSMLib {
+  umbrella header "TSMLib-umbrella.h"
+
+  export *
+  module * { export * }
+}
