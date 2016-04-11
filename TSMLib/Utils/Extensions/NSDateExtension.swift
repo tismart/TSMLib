@@ -19,6 +19,18 @@ public extension NSDate {
         return comp1.day == comp2.day && comp1.month == comp2.month && comp1.year == comp2.year
     }
     
+    public func formattedDateString(date: NSDate) -> String {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        return dateFormatter.stringFromDate(date)
+    }
+    
+    public func formattedDate(date: NSDate) -> NSDate {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        return dateFormatter.dateFromString(dateFormatter.stringFromDate(date))!
+    }
+    
     public func daysInBetweenDate(date: NSDate) -> Double {
         var diff = self.timeIntervalSinceNow - date.timeIntervalSinceNow
         diff = fabs(diff/86400)

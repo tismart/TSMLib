@@ -7,6 +7,7 @@ target 'TSMLib' do
 
   pod 'Alamofire'
   pod ‘MagicalRecord’
+  pod 'GoogleMaps'
 
 end
 
