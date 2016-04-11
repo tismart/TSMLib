@@ -13,7 +13,7 @@ import GoogleMaps
 
 public class TSMLibrary {
     public var networkManager = NetworkManager()
-    public var databaseManager = DatabaseManager()  
+    public var databaseManager = DatabaseManager()
     
     public class func initializeDataBaseWithName(name name : String) {
         MagicalRecord.setupCoreDataStackWithStoreNamed(name)
